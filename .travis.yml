@@ -61,6 +61,8 @@ before_install:
   - source activate testenv
 
 install:
+  - python --version
+  - pip --version
   # Install general requirements the way setup.py suggests
   - pip install pep8 codecov
   # Temporarily pin the numpy version for travis-ci
